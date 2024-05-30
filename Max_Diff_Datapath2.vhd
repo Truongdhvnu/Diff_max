@@ -22,6 +22,7 @@ ENTITY Max_Diff_Datapath IS
         N_minus1    : IN STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
         -- input control signal
         idex_en     : IN STD_LOGIC;
+        minmax_ld_en   : IN STD_LOGIC;
         Addr_ld, data_ld, diff_ld  : IN STD_LOGIC;
         
         -- output control signal
@@ -39,7 +40,11 @@ ARCHITECTURE RTL of Max_Diff_Datapath IS
     SIGNAL cur_min : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
     SIGNAL sub : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
     SIGNAL max_lt_data, min_gt_data : STD_LOGIC;
+    SIGNAL max_ld : STD_LOGIC;
+    SIGNAL min_ld : STD_LOGIC;
 BEGIN
+    max_ld <= max_lt_data AND minmax_ld_en;
+    min_ld <= min_gt_data AND minmax_ld_en;
 -- Counter
     index_cnter : Counter_Nbit
     GENERIC MAP(COUNTER_WIDTH => ADDR_WIDTH)
@@ -80,7 +85,7 @@ BEGIN
     PORT MAP(
         STD_LOGIC_VECTOR(to_signed(-2**(DATA_WIDTH-1) , DATA_WIDTH)),
         received_data,
-        nReset_in, Clk, max_lt_data,
+        nReset_in, Clk, max_ld,
         cur_max);
     
     min_reg : Regn
@@ -88,7 +93,7 @@ BEGIN
     PORT MAP(
         STD_LOGIC_VECTOR(to_signed(2**(DATA_WIDTH-1) - 1 , DATA_WIDTH)),
         received_data,
-        nReset_in, Clk, min_gt_data,
+        nReset_in, Clk, min_ld,
         cur_min);
 
     diff_reg : Regn
