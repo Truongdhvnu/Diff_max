@@ -1,0 +1,297 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max
+Ecounter_nbit
+Z1 w1717165238
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 15
+R0
+Z6 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Counter_Nbit.vhd
+Z7 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Counter_Nbit.vhd
+l0
+L5 1
+VJ>_Bbbk;Z7f:Q^d_[>;8S0
+!s100 acZ^1F5HM1KJozzTSR79g2
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1718200220
+!i10b 1
+Z10 !s108 1718200220.000000
+Z11 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Counter_Nbit.vhd|
+Z12 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Counter_Nbit.vhd|
+!i113 1
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 12 counter_nbit 0 22 J>_Bbbk;Z7f:Q^d_[>;8S0
+!i122 15
+l21
+L19 21
+V5[]gz3GVMkVSk4]dX?z=H1
+!s100 AXK1]XTCZ>?TVcj]K7S761
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Plib
+R4
+R5
+!i122 16
+w1718198462
+R0
+8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd
+F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd
+l0
+L4 1
+VQJBUgD:zELYg:<ZfO6@Q;1
+!s100 <UV9ReFmJfidVdFk49K2Q2
+R8
+32
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd|
+!s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd|
+!i113 1
+R13
+R14
+Emax_diff
+Z15 w1718116990
+R4
+R5
+Z16 DPx4 work 3 lib 0 22 QJBUgD:zELYg:<ZfO6@Q;1
+!i122 17
+R0
+Z17 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd
+Z18 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd
+l0
+L5 1
+V;Y<S23SIKedS4m2mM6F=80
+!s100 SPEIfY4`GMak^iKEQfkL52
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd|
+Z20 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+R16
+DEx4 work 8 max_diff 0 22 ;Y<S23SIKedS4m2mM6F=80
+!i122 17
+l42
+L33 51
+VDghj8jQe]SlSNN3:BhJzm3
+!s100 fXaZ>3No7YBMSX<n6:GfT1
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Emax_diff_controller
+Z21 w1718199873
+R4
+R5
+!i122 18
+R0
+Z22 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd
+Z23 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd
+l0
+L4 1
+VgY<D=TT`Id1^XKf51V?=k0
+!s100 mXSk?DJZXDlI5`aLMofTT2
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd|
+Z25 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 19 max_diff_controller 0 22 gY<D=TT`Id1^XKf51V?=k0
+!i122 18
+l29
+L26 73
+Vm@6f:4mEXDE4c3KWV50]R0
+!s100 bneXmEDUzX9>:Zm5Skc940
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Emax_diff_datapath
+Z26 w1718116829
+R16
+Z27 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+R4
+R5
+!i122 19
+R0
+Z28 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd
+Z29 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd
+l0
+L7 1
+VV8RO`[D07ma`gdGD?:hM63
+!s100 n`M@DSSHUDg7a8]7UCa403
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd|
+Z31 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd|
+!i113 1
+R13
+R14
+Artl
+R16
+R27
+R2
+R3
+R4
+R5
+DEx4 work 17 max_diff_datapath 0 22 V8RO`[D07ma`gdGD?:hM63
+!i122 19
+l47
+L36 77
+VFaBUcmTVQJ3]_JZPLObF70
+!s100 cSE7Sd<VM>C<g63nI_aIf2
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Emax_diff_tb
+Z32 w1718200191
+R16
+R27
+R4
+R5
+!i122 20
+R0
+Z33 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd
+Z34 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd
+l0
+L6 1
+VWzkf]MMS:7leChJ2c_H;42
+!s100 `DnJN>bBAm5[6M<O[3C3k2
+R8
+32
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd|
+Z36 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R16
+R27
+R4
+R5
+DEx4 work 11 max_diff_tb 0 22 Wzkf]MMS:7leChJ2c_H;42
+!i122 20
+l27
+L9 98
+VE7X_KD@:j>MATVog:JbP]0
+!s100 <8>D3n9AniQ6APmXi@7PJ1
+R8
+32
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Eregn
+Z37 w1718198417
+R4
+R5
+!i122 21
+R0
+Z38 8/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd
+Z39 F/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd
+l0
+L4 1
+V5a:Jz6f[`G;SJ9PMY;hZa0
+!s100 A[:Sn1BA5j1FF4Nd<SBIR0
+R8
+32
+R9
+!i10b 1
+R10
+Z40 !s90 -reportprogress|300|-work|work|/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd|
+Z41 !s107 /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R4
+R5
+Z42 DEx4 work 4 regn 0 22 5a:Jz6f[`G;SJ9PMY;hZa0
+!i122 21
+l19
+Z43 L16 18
+Z44 VnYf@aE7jR`6YKHnZXb;@:3
+Z45 !s100 BOK7J^chlET29QPC@>=G11
+R8
+32
+R9
+!i10b 1
+R10
+R40
+R41
+!i113 1
+R13
+R14

@@ -1,0 +1,4 @@
+Running: xsim.dir/Max_Diff_tb_behav/xsimk -simmode gui -wdb Max_Diff_tb_behav.wdb -simrunnum 0 -socket 57665
+Design successfully loaded
+Design Loading Memory Usage: 32836 KB (Peak: 33400 KB)
+Design Loading CPU Usage: 40 ms

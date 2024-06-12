@@ -1,0 +1,91 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Counter_Nbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_Nbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+ERROR: [VRFC 10-2989] 'min_gt_data' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:65]
+ERROR: [VRFC 10-2989] 'max_lt_data' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:63]
+ERROR: [VRFC 10-2989] 'max_ld' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:101]
+ERROR: [VRFC 10-2989] 'min_ld' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:103]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:26]
+INFO: [VRFC 10-3070] VHDL file '/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+ERROR: [VRFC 10-2989] 'min_gt_data' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:65]
+ERROR: [VRFC 10-2989] 'max_lt_data' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:63]
+ERROR: [VRFC 10-2989] 'max_ld' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:101]
+ERROR: [VRFC 10-2989] 'min_ld' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:103]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:26]
+INFO: [VRFC 10-3070] VHDL file '/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+ERROR: [VRFC 10-2989] 's7' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:47]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd:26]
+INFO: [VRFC 10-3070] VHDL file '/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Lib.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Datapath'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Regn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Datapath'

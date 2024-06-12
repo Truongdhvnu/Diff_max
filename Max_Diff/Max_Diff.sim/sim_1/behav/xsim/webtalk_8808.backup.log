@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 10 21:20:55 2024
+# Process ID: 8808
+# Current directory: /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/behav/xsim/xsim.dir/Max_Diff_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/behav/xsim/xsim.dir/Max_Diff_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 10 21:20:57 2024...

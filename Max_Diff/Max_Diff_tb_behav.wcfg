@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Max_Diff_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Max_Diff_tb" />
+            <top_module name="lib" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="100000000fs"></ZoomStartTime>
+      <ZoomEndTime time="236200001fs"></ZoomEndTime>
+      <Cursor1Time time="305000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="165"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="other" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/state">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Max_Diff_tb/nReset_in">
+      <obj_property name="ElementShortName">nReset_in</obj_property>
+      <obj_property name="ObjectShortName">nReset_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/nReset_out">
+      <obj_property name="ElementShortName">nReset_out</obj_property>
+      <obj_property name="ObjectShortName">nReset_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Max_Diff_tb/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Max_Diff_tb/Start">
+      <obj_property name="ElementShortName">Start</obj_property>
+      <obj_property name="ObjectShortName">Start</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group16">
+      <obj_property name="label">Input params</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/Max_Diff_tb/Addr_in">
+         <obj_property name="ElementShortName">Addr_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Addr_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/N_minus1">
+         <obj_property name="ElementShortName">N_minus1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">N_minus1[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group18">
+      <obj_property name="label">Addressing</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/addr_ld">
+         <obj_property name="ElementShortName">addr_ld</obj_property>
+         <obj_property name="ObjectShortName">addr_ld</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/R_addr">
+         <obj_property name="ElementShortName">R_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">R_addr[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/R_en">
+         <obj_property name="ElementShortName">R_en</obj_property>
+         <obj_property name="ObjectShortName">R_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/R_ready">
+         <obj_property name="ElementShortName">R_ready</obj_property>
+         <obj_property name="ObjectShortName">R_ready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group21">
+      <obj_property name="label">data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/data_ld">
+         <obj_property name="ElementShortName">data_ld</obj_property>
+         <obj_property name="ObjectShortName">data_ld</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/Data_in">
+         <obj_property name="ElementShortName">Data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Data_in[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/received_data">
+         <obj_property name="ElementShortName">received_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">received_data[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group32">
+      <obj_property name="label">min_maxing</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/minmax_ld_en">
+         <obj_property name="ElementShortName">minmax_ld_en</obj_property>
+         <obj_property name="ObjectShortName">minmax_ld_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/max_ld">
+         <obj_property name="ElementShortName">max_ld</obj_property>
+         <obj_property name="ObjectShortName">max_ld</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/max_reg/Q">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[7:0]</obj_property>
+         <obj_property name="label">max_reg[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/min_ld">
+         <obj_property name="ElementShortName">min_ld</obj_property>
+         <obj_property name="ObjectShortName">min_ld</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/min_reg/Q">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Q[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[7:0]</obj_property>
+         <obj_property name="label">min_reg[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/index_en">
+         <obj_property name="ElementShortName">index_en</obj_property>
+         <obj_property name="ObjectShortName">index_en</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/index_cnter/Dout">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Dout[7:0]</obj_property>
+         <obj_property name="label">index_cntr[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/index_gt_Nminus1">
+         <obj_property name="ElementShortName">index_gt_Nminus1</obj_property>
+         <obj_property name="ObjectShortName">index_gt_Nminus1</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group23">
+      <obj_property name="label">result</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/W_valid">
+         <obj_property name="ElementShortName">W_valid</obj_property>
+         <obj_property name="ObjectShortName">W_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Max_Diff_tb/NS_ready">
+         <obj_property name="ElementShortName">NS_ready</obj_property>
+         <obj_property name="ObjectShortName">NS_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Max_Diff_tb/Diff">
+         <obj_property name="ElementShortName">Diff[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Diff[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Max_Diff_tb/Done">
+      <obj_property name="ElementShortName">Done</obj_property>
+      <obj_property name="ObjectShortName">Done</obj_property>
+   </wvobject>
+</wave_config>

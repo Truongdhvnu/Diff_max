@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Counter_Nbit.vhd" \
+"../../../../../Lib.vhd" \
+"../../../../../Max_Diff.vhd" \
+"../../../../../Max_Diff_Controller.vhd" \
+"../../../../../Max_Diff_Datapath.vhd" \
+"../../../../../Regn.vhd" \
+"../../../../../Max_Diff_tb.vhd" \
+
+# Do not sort compile order
+nosort

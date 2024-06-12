@@ -10,84 +10,93 @@ ENTITY Max_Diff_Datapath IS
         ADDR_WIDTH : INTEGER := ADDR_WIDTH
     );
     PORT (
-        nReset_in   : IN STD_LOGIC;
-        Clk         : IN STD_LOGIC;
+        nReset_in : IN STD_LOGIC;
+        Clk       : IN STD_LOGIC;
         -- Interface signal with input buffer
-        R_addr      : OUT STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
-        Data_in     : IN STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+        R_addr  : OUT STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
+        Data_in : IN STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
         -- Interface signal with output buffer 
-        Diff        : OUT STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
+        Diff : OUT STD_LOGIC_VECTOR(DATA_WIDTH - 1 DOWNTO 0);
         -- parameter 
-        Addr_in     : IN STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
-        N_minus1    : IN STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
+        Addr_in  : IN STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
+        N_minus1 : IN STD_LOGIC_VECTOR(ADDR_WIDTH - 1 DOWNTO 0);
         -- input control signal
-        idex_en     : IN STD_LOGIC;
-        Addr_ld, data_ld, max_ld, min_ld, diff_ld  : IN STD_LOGIC;
-        
+        index_en     : IN STD_LOGIC;
+        minmax_ld_en : IN STD_LOGIC;
+        addr_ld      : IN STD_LOGIC;
+        data_ld      : IN STD_LOGIC;
+        Diff_ld      : IN STD_LOGIC;
+
         -- output control signal
-        index_gt_Nminus1     : OUT STD_LOGIC;
-        max_lt_data, min_gt_data : OUT STD_LOGIC
+        index_gt_Nminus1 : OUT STD_LOGIC
+
     );
 END Max_Diff_Datapath;
 
-ARCHITECTURE RTL of Max_Diff_Datapath IS
+ARCHITECTURE RTL OF Max_Diff_Datapath IS
     SIGNAL index_cnt : STD_LOGIC_VECTOR (ADDR_WIDTH - 1 DOWNTO 0);
 
-    SIGNAL Addr_sum : STD_LOGIC_VECTOR (ADDR_WIDTH - 1 DOWNTO 0);
-    SIGNAL received_data : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
-    -- SIGNAL max_lt_data : STD_LOGIC;
-    -- SIGNAL min_gt_data : STD_LOGIC;
-    SIGNAL cur_max : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
-    SIGNAL cur_min : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
-    SIGNAL sub : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL Addr_sum                 : STD_LOGIC_VECTOR (ADDR_WIDTH - 1 DOWNTO 0);
+    SIGNAL received_data            : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL cur_max                  : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL cur_min                  : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL sub                      : STD_LOGIC_VECTOR (DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL max_lt_data, min_gt_data : STD_LOGIC;
+    SIGNAL max_ld                   : STD_LOGIC;
+    SIGNAL min_ld                   : STD_LOGIC;
 BEGIN
--- Counter
+    max_ld <= max_lt_data AND minmax_ld_en;
+    min_ld <= min_gt_data AND minmax_ld_en;
+    -- Counter
     index_cnter : Counter_Nbit
     GENERIC MAP(COUNTER_WIDTH => ADDR_WIDTH)
     PORT MAP(
-        Clk => Clk,
-        Enable => idex_en,
-        Clear => nReset_in,
+        Clk    => Clk,
+        Enable => index_en,
+        Clear  => nReset_in,
         Din => (OTHERS => '0'),
-        Load => '0',
-        Dout => index_cnt
+        Load   => '0',
+        Dout   => index_cnt
     );
 
--- Adder/Copare module
-    Addr_sum <= STD_LOGIC_VECTOR(unsigned(Addr_in) +  unsigned(index_cnt));
-    index_gt_Nminus1 <= '1' when unsigned(Addr_sum) > unsigned(N_minus1) else '0';
-    max_lt_data <= '1' when signed(cur_max) < signed(received_data) else '0';
-    min_gt_data <= '1' when signed(received_data) < signed(cur_min) else '0';
+    -- Adder/Copare module
+    Addr_sum         <= STD_LOGIC_VECTOR(unsigned(Addr_in) + unsigned(index_cnt));
+    index_gt_Nminus1 <= '1' WHEN unsigned(Addr_sum) > unsigned(N_minus1) ELSE
+        '0';
+    max_lt_data <= '1' WHEN signed(cur_max) < signed(received_data) ELSE
+        '0';
+    min_gt_data <= '1' WHEN signed(received_data) < signed(cur_min) ELSE
+        '0';
     sub <= STD_LOGIC_VECTOR(signed(cur_max) - signed(cur_min));
--- Reg
+    -- Reg
     Addr_reg : Regn
     GENERIC MAP(N => ADDR_WIDTH)
     PORT MAP(
-        (OTHERS => '0'),
+    (OTHERS => '0'),
         Addr_sum,
-        nReset_in, Clk, Addr_ld,
+        nReset_in, Clk, addr_ld,
         R_addr);
 
     data_reg : Regn
     GENERIC MAP(N => DATA_WIDTH)
     PORT MAP(
-        (OTHERS => '0'),
+    (OTHERS => '0'),
         Data_in,
         nReset_in, Clk, data_ld,
         received_data);
-    
+
     max_reg : Regn
     GENERIC MAP(N => DATA_WIDTH)
     PORT MAP(
-        STD_LOGIC_VECTOR(to_signed(-2**(DATA_WIDTH-1) , DATA_WIDTH)),
+        STD_LOGIC_VECTOR(to_signed(-2 ** (DATA_WIDTH - 1), DATA_WIDTH)),
         received_data,
         nReset_in, Clk, max_ld,
         cur_max);
-    
+
     min_reg : Regn
     GENERIC MAP(N => DATA_WIDTH)
     PORT MAP(
-        STD_LOGIC_VECTOR(to_signed(2**(DATA_WIDTH-1) - 1 , DATA_WIDTH)),
+        STD_LOGIC_VECTOR(to_signed(2 ** (DATA_WIDTH - 1) - 1, DATA_WIDTH)),
         received_data,
         nReset_in, Clk, min_ld,
         cur_min);
@@ -95,9 +104,9 @@ BEGIN
     diff_reg : Regn
     GENERIC MAP(N => DATA_WIDTH)
     PORT MAP(
-        (OTHERS => '0'),
+    (OTHERS => '0'),
         sub,
-        nReset_in, Clk, diff_ld,
+        '1', Clk, Diff_ld,
         Diff);
-        
+
 END ARCHITECTURE RTL;
