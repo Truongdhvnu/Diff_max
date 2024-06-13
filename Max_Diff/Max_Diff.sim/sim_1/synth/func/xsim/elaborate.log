@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto dd972e1535734215935ca941f3274d2e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Post_Synthesis_tb_func_synth xil_defaultlib.Post_Synthesis_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto dd972e1535734215935ca941f3274d2e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Max_Diff_tb3_func_synth xil_defaultlib.Max_Diff_tb3 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.lib
 Compiling package unisim.vcomponents
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
@@ -48,5 +49,5 @@ Compiling architecture structure of entity xil_defaultlib.Regn_2 [regn_2_default
 Compiling architecture structure of entity xil_defaultlib.Regn_3 [regn_3_default]
 Compiling architecture structure of entity xil_defaultlib.Max_Diff_Datapath [max_diff_datapath_default]
 Compiling architecture structure of entity xil_defaultlib.Max_Diff [max_diff_default]
-Compiling architecture tb of entity xil_defaultlib.post_synthesis_tb
-Built simulation snapshot Post_Synthesis_tb_func_synth
+Compiling architecture tb of entity xil_defaultlib.max_diff_tb3
+Built simulation snapshot Max_Diff_tb3_func_synth

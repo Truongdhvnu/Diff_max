@@ -1,0 +1,7 @@
+Running: xsim.dir/Max_Diff_tb2_func_synth/xsimk.exe -simmode gui -wdb Max_Diff_tb2_func_synth.wdb -simrunnum 0 -socket 52223
+Design successfully loaded
+Design Loading Memory Usage: 6280 KB (Peak: 6280 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7064 KB (Peak: 7064 KB)
+Simulation CPU Usage: 15 ms

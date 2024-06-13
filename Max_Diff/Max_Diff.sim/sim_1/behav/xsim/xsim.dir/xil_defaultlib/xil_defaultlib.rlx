@@ -3,10 +3,12 @@
 Dec  7 2018
 00:33:28
 C:/Users/Truong/Desktop/digital_design/Counter_Nbit.vhd,1718206545,vhdl,,,,counter_nbit,,,,,,,,
-C:/Users/Truong/Desktop/digital_design/Lib.vhd,1718206545,vhdl,C:/Users/Truong/Desktop/digital_design/Max_Diff_Datapath.vhd,,,lib,,,,,,,,
-C:/Users/Truong/Desktop/digital_design/Max_Diff.vhd,1718206545,vhdl,,,,max_diff,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Lib.vhd,1718206545,vhdl,C:/Users/Truong/Desktop/digital_design/Max_Diff.vhd;C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/tb3.vhd,,,lib,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff.vhd,1718206545,vhdl,C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/tb3.vhd,,,max_diff,,,,,,,,
 C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/Post_Synthesis_tb.vhd,1718264496,vhdl,,,,post_synthesis_tb,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/tb3.vhd,1718291137,vhdl,,,,max_diff_tb3,,,,,,,,
 C:/Users/Truong/Desktop/digital_design/Max_Diff_Controller.vhd,1718265173,vhdl,,,,max_diff_controller,,,,,,,,
-C:/Users/Truong/Desktop/digital_design/Max_Diff_Datapath.vhd,1718265171,vhdl,,,,max_diff_datapath,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff_Datapath.vhd,1718288754,vhdl,,,,max_diff_datapath,,,,,,,,
 C:/Users/Truong/Desktop/digital_design/Max_Diff_tb.vhd,1718206545,vhdl,,,,max_diff_tb,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_diff_tb2.vhd,1718287927,vhdl,,,,max_diff_tb2,,,,,,,,
 C:/Users/Truong/Desktop/digital_design/Regn.vhd,1718206545,vhdl,,,,regn,,,,,,,,

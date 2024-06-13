@@ -61,7 +61,7 @@ BEGIN
 
     -- Adder/Copare module
     Addr_sum         <= STD_LOGIC_VECTOR(unsigned(Addr_in) + unsigned(index_cnt));
-    index_gt_Nminus1 <= '1' WHEN unsigned(Addr_sum) > unsigned(N_minus1) ELSE
+    index_gt_Nminus1 <= '1' WHEN unsigned(index_cnt) > unsigned(N_minus1) ELSE
         '0';
     max_lt_data <= '1' WHEN signed(cur_max) < signed(received_data) ELSE
         '0';

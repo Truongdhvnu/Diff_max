@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"Max_Diff_tb2_func_synth.vhd" \
+"../../../../../../Lib.vhd" \
+"../../../../../../Max_diff_tb2.vhd" \
+
+# Do not sort compile order
+nosort
