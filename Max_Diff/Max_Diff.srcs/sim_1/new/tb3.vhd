@@ -139,7 +139,8 @@ BEGIN
 
         -- For loop to pass data from array
         FOR i IN 0 TO 9 LOOP
-            WAIT UNTIL R_en = '1';
+--            WAIT UNTIL R_en = '1';
+            WAIT UNTIL rising_edge(Clk) AND R_en = '1';
 --            WAIT UNTIL rising_edge(Clk);
             Data_in <= STD_LOGIC_VECTOR(arr2_values(i));
             R_ready <= '1';

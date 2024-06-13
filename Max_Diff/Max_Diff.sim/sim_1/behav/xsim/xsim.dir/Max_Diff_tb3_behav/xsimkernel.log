@@ -2,3 +2,6 @@ Running: xsim.dir/Max_Diff_tb3_behav/xsimk.exe -simmode gui -wdb Max_Diff_tb3_be
 Design successfully loaded
 Design Loading Memory Usage: 5896 KB (Peak: 5896 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6508 KB (Peak: 6508 KB)
+Simulation CPU Usage: 61 ms

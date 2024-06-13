@@ -20,12 +20,12 @@ architecture Behavior of Counter_Nbit is
   signal Count : STD_LOGIC_VECTOR (COUNTER_WIDTH-1 downto 0);
   begin
 
-  trigger : process (Clk, Clear) is
+  trigger : process (Clk) is
     begin
-        if (Clear = '0') then
-            Count <= (others => '0');
-        elsif (Clk'EVENT AND Clk = '1') then
-            if (load = '1') then
+        if (Clk'EVENT AND Clk = '1') then
+            if (Clear = '0') then
+                Count <= (others => '0');
+            elsif (load = '1') then
                 Count <=  Din;	
             elsif (Enable = '1') then
                 Count <= Count + 1;

@@ -17,12 +17,12 @@ ARCHITECTURE Behavior OF Regn IS
     SIGNAL reg : STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
 
 BEGIN
-    PROCESS (nReset, Clk)
+    PROCESS (Clk)
     BEGIN
-        IF nReset = '0' THEN
-            reg <= DEFAULT;
-        ELSIF (Clk'EVENT AND Clk = '1') THEN
-            IF (En = '1') THEN
+        IF (Clk'EVENT AND Clk = '1') THEN
+            IF nReset = '0' THEN
+                reg <= DEFAULT;
+            ELSIF (En = '1') THEN
                 reg <= D;
             END IF;
         END IF;
