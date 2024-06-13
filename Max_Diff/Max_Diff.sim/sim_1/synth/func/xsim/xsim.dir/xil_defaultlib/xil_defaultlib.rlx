@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Truong/Desktop/digital_design/Lib.vhd,1718206545,vhdl,C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/Post_Synthesis_tb.vhd,,,lib,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.sim/sim_1/synth/func/xsim/Post_Synthesis_tb_func_synth.vhd,1718265294,vhdl,,,,counter_nbit;max_diff;max_diff_controller;max_diff_datapath;regn;regn_0;regn_1;regn_2;regn_3,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.srcs/sim_1/new/Post_Synthesis_tb.vhd,1718264496,vhdl,,,,post_synthesis_tb,,,,,,,,
+C:/Users/Truong/Desktop/digital_design/Max_Diff_tb.vhd,1718206545,vhdl,,,,max_diff_tb,,,,,,,,

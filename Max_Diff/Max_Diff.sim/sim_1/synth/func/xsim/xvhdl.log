@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Truong/Desktop/digital_design/Max_Diff/Max_Diff.sim/sim_1/synth/func/xsim/Post_Synthesis_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_Nbit'
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Controller'
+INFO: [VRFC 10-3107] analyzing entity 'Regn'
+INFO: [VRFC 10-3107] analyzing entity 'Regn_0'
+INFO: [VRFC 10-3107] analyzing entity 'Regn_1'
+INFO: [VRFC 10-3107] analyzing entity 'Regn_2'
+INFO: [VRFC 10-3107] analyzing entity 'Regn_3'
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_Datapath'
+INFO: [VRFC 10-3107] analyzing entity 'Max_Diff'

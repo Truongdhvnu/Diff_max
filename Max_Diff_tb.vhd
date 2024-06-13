@@ -65,7 +65,7 @@ BEGIN
         Addr_in  <= STD_LOGIC_VECTOR(to_unsigned(0, ADDR_WIDTH));
         N_minus1 <= STD_LOGIC_VECTOR(to_unsigned(2, DATA_WIDTH));
         WAIT FOR 12 ns;
-        Start <= '0';
+--        Start <= '0';
 
         WAIT UNTIL rising_edge(Clk) AND R_en = '1';
         WAIT UNTIL rising_edge(Clk);

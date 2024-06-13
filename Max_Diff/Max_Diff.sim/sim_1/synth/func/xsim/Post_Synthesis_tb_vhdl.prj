@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"Post_Synthesis_tb_func_synth.vhd" \
+"../../../../../Max_Diff.srcs/sim_1/new/Post_Synthesis_tb.vhd" \
+
+# Do not sort compile order
+nosort

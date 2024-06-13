@@ -1,7 +1,7 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto dd972e1535734215935ca941f3274d2e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Max_Diff_tb_behav xil_defaultlib.Max_Diff_tb -log elaborate.log 
-Using 8 slave threads.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto dd972e1535734215935ca941f3274d2e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Post_Synthesis_tb_behav xil_defaultlib.Post_Synthesis_tb -log elaborate.log 
+Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
@@ -19,5 +19,5 @@ Compiling architecture behavior of entity xil_defaultlib.Counter_Nbit [counter_n
 Compiling architecture behavior of entity xil_defaultlib.Regn [\Regn(n=8)\]
 Compiling architecture rtl of entity xil_defaultlib.Max_Diff_Datapath [\Max_Diff_Datapath(data_width=8,...]
 Compiling architecture behavior of entity xil_defaultlib.Max_Diff [\Max_Diff(data_width=8,addr_widt...]
-Compiling architecture tb of entity xil_defaultlib.max_diff_tb
-Built simulation snapshot Max_Diff_tb_behav
+Compiling architecture tb of entity xil_defaultlib.post_synthesis_tb
+Built simulation snapshot Post_Synthesis_tb_behav
