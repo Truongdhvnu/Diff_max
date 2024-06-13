@@ -80,6 +80,9 @@ BEGIN
 
     stimulus : PROCESS
     BEGIN
+        Start <= '0';
+        R_ready <= '0';
+        NS_ready <= '0';
         -- Initial wait
         WAIT FOR 22 ns;
 

@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Thu Jun 13 22:19:39 2024
+-- Date        : Thu Jun 13 22:31:47 2024
 -- Host        : viktor-S551LA running 64-bit Ubuntu 22.04.4 LTS
 -- Command     : write_vhdl -mode funcsim -nolib -force -file
 --               /media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff/Max_Diff.sim/sim_1/synth/func/xsim/Max_Diff_tb_func_synth.vhd

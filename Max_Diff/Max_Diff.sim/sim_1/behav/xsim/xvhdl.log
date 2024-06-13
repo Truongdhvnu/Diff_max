@@ -1,2 +1,5 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Max_Diff_tb'
+ERROR: [VRFC 10-2989] 'ns_readu' is not declared [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd:85]
+ERROR: [VRFC 10-3782] unit 'tb' ignored due to previous errors [/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd:9]
+INFO: [VRFC 10-3070] VHDL file '/media/viktor/Setup/Workstorage/RTL_Designs/Diff_max/Max_Diff_tb.vhd' ignored due to errors
