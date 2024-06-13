@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="100000000fs"></ZoomStartTime>
-      <ZoomEndTime time="236200001fs"></ZoomEndTime>
-      <Cursor1Time time="305000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="998728000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
    <wvobject type="other" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/state">
@@ -39,6 +39,8 @@
    <wvobject type="logic" fp_name="/Max_Diff_tb/Start">
       <obj_property name="ElementShortName">Start</obj_property>
       <obj_property name="ObjectShortName">Start</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="group" fp_name="group16">
       <obj_property name="label">Input params</obj_property>
@@ -51,6 +53,7 @@
       <wvobject type="array" fp_name="/Max_Diff_tb/N_minus1">
          <obj_property name="ElementShortName">N_minus1[7:0]</obj_property>
          <obj_property name="ObjectShortName">N_minus1[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group18">
@@ -90,6 +93,7 @@
       <wvobject type="array" fp_name="/Max_Diff_tb/uut/max_diff_datapath_inst/received_data">
          <obj_property name="ElementShortName">received_data[7:0]</obj_property>
          <obj_property name="ObjectShortName">received_data[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group32">
@@ -158,11 +162,13 @@
       <wvobject type="array" fp_name="/Max_Diff_tb/Diff">
          <obj_property name="ElementShortName">Diff[7:0]</obj_property>
          <obj_property name="ObjectShortName">Diff[7:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject type="logic" fp_name="/Max_Diff_tb/Done">
       <obj_property name="ElementShortName">Done</obj_property>
       <obj_property name="ObjectShortName">Done</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
 </wave_config>
