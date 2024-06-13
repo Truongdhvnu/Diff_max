@@ -31,16 +31,16 @@ ARCHITECTURE tb OF Max_Diff_tb IS
                                     to_signed(10, DATA_WIDTH));
 
     TYPE arr2 IS ARRAY (0 TO 9) OF SIGNED(DATA_WIDTH - 1 DOWNTO 0);
-    CONSTANT arr2_values : arr2 := (to_signed(-79, DATA_WIDTH),
+    CONSTANT arr2_values : arr2 := (to_signed(-39, DATA_WIDTH),
                                     to_signed(18, DATA_WIDTH),
-                                    to_signed(54, DATA_WIDTH),
-                                    to_signed(-78, DATA_WIDTH),
-                                    to_signed(-102, DATA_WIDTH),
-                                    to_signed(-100, DATA_WIDTH),
-                                    to_signed(124, DATA_WIDTH),
+                                    to_signed(24, DATA_WIDTH),
+                                    to_signed(-18, DATA_WIDTH),
+                                    to_signed(-32, DATA_WIDTH),
+                                    to_signed(-50, DATA_WIDTH),
+                                    to_signed(24, DATA_WIDTH),
                                     to_signed(-25, DATA_WIDTH),
                                     to_signed(-2, DATA_WIDTH),
-                                    to_signed(-82, DATA_WIDTH));   
+                                    to_signed(-62, DATA_WIDTH));   
 BEGIN
     uut : ENTITY work.Max_Diff
         PORT MAP(

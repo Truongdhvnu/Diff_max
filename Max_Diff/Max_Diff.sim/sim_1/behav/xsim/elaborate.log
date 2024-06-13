@@ -4,4 +4,20 @@ Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto dd972e1535
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.lib
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Max_Diff_Controller [max_diff_controller_default]
+Compiling architecture behavior of entity xil_defaultlib.Counter_Nbit [counter_nbit_default]
+Compiling architecture behavior of entity xil_defaultlib.Regn [\Regn(n=8)\]
+Compiling architecture rtl of entity xil_defaultlib.Max_Diff_Datapath [\Max_Diff_Datapath(data_width=8,...]
+Compiling architecture behavior of entity xil_defaultlib.Max_Diff [max_diff_default]
+Compiling architecture tb of entity xil_defaultlib.max_diff_tb
+Built simulation snapshot Max_Diff_tb_behav

@@ -1,0 +1,1 @@
+-wto "dd972e1535734215935ca941f3274d2e" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "Max_Diff_tb_func_synth" "xil_defaultlib.Max_Diff_tb" -log "elaborate.log" 

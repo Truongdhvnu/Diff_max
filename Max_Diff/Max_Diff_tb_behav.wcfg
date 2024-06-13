@@ -12,14 +12,17 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="998728000fs"></Cursor1Time>
+      <ZoomEndTime time="803797469fs"></ZoomEndTime>
+      <Cursor1Time time="355000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
+   <wave_markers>
+      <marker label="" time="413924000" />
+   </wave_markers>
    <wvobject type="other" fp_name="/Max_Diff_tb/uut/max_diff_controller_inst/state">
       <obj_property name="ElementShortName">state</obj_property>
       <obj_property name="ObjectShortName">state</obj_property>
